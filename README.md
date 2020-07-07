@@ -1,0 +1,1 @@
+# Minilarge-RIO-210-Automate-identification-and-recognition-of-handwritten-text-from-an-image
