@@ -1,1 +1,1 @@
-# Automate-identification-and-recognition-of-handwritten-text-from-an-image
+# Automate Identification and Recognition of Handwritten Text from an Image
