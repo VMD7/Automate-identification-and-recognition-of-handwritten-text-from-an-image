@@ -4,21 +4,6 @@
 
 This repository contains the implementation of a CRNN (Convolutional Recurrent Neural Network) model designed to detect and recognize handwritten text from images. The CRNN combines convolutional layers for feature extraction with recurrent layers for sequence modeling, making it well-suited for tasks involving sequential data like text.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Training](#training)
-  - [Inference](#inference)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 Handwritten text recognition is a challenging task due to the variability in handwriting styles, orientations, and the presence of noise in images. This project leverages a CRNN architecture to accurately detect and recognize handwritten text from images, making it suitable for applications such as digitizing handwritten documents, automated form processing, and more.
@@ -95,8 +80,24 @@ Trainable params: 8,741,199
 Non-trainable params: 2,048
 _________________________________________________________________
 ```
-   
 
+## Results
+
+After training the CRNN model on the IAM Handwriting Database, the following results were achieved:
+
+- Jaro Distance: 0.91
+- Ratio: 0.88
+
+## Demo
+
+You can try out the model live on Hugging Face Spaces: https://huggingface.co/spaces/vjdevane/htr
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request with your changes. Ensure your code adheres to the existing style and includes appropriate tests.
+   
+## License
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 
 
