@@ -1,31 +1,57 @@
 # Automate Identification and Recognition of Handwritten Text from an Image
 
-In this repository i used various techniques to identify and recognize the text from an image. 
+![CRNN Model](images/crnn_model.png)
 
-In Second Folder "HTR_Using_CRNN" i used CRNN concept to identify and recognize the text from an image.
+This repository contains the implementation of a CRNN (Convolutional Recurrent Neural Network) model designed to detect and recognize handwritten text from images. The CRNN combines convolutional layers for feature extraction with recurrent layers for sequence modeling, making it well-suited for tasks involving sequential data like text.
 
-## 1) Handwritten Text Recognition Using CRNN
-To use this repository on your loacal machine or Google Colab follow the below steps:
+## Table of Contents
 
-### For Google Colab
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Training](#training)
+  - [Inference](#inference)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
 
-1) First Clone and Download this repository. 
+## Introduction
 
-2) Then download the handwritten IAM dataset from this link - (http://www.fki.inf.unibe.ch/databases/iam-handwriting-database/download-the-iam-handwriting-database) or (http://www.fki.inf.unibe.ch/DBs/iamDB/data/words)
+Handwritten text recognition is a challenging task due to the variability in handwriting styles, orientations, and the presence of noise in images. This project leverages a CRNN architecture to accurately detect and recognize handwritten text from images, making it suitable for applications such as digitizing handwritten documents, automated form processing, and more.
 
-3) Creat your kaggle account and upload this data in kaggle.
+## Features
 
-4) Go to "Your Account" and create New "API" and download the .json file.
+- **End-to-end text detection and recognition**: Automatically detect and recognize text from input images.
+- **CRNN architecture**: Combines CNNs for feature extraction with RNNs for sequence modeling.
+- **CTC loss function**: Utilizes Connectionist Temporal Classification (CTC) for sequence prediction without pre-segmented labels.
+- **Preprocessing utilities**: Includes image preprocessing and augmentation utilities.
 
-5) Now upload the "words.txt"  to your Google Drive which is in "Data" folder of "HTR_Using_CRNN" folder.
+## Installation
 
-6) Change necessary directories such as words.txt, .json file locations in code.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VMD7/Automate-identification-and-recognition-of-handwritten-text-from-an-image
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-7) Now follow the HTR_Using_CRNN.ipynb
+## Model Architecture
 
-### For Local Machine
+The CRNN model architecture consists of the following components:
 
-Skip steps 2,3,4,5 also don't use Kaggle setting up section code in "HTR_Using_CRNN.ipynb" file.
+- Convolutional Layers: Extract spatial features from input images.
+
+- Recurrent Layers (Bidirectional LSTM): Model the sequential nature of the text.
+
+- CTC Loss Function: Handles the alignment between predicted and actual sequences.
+   
+
 
 
 
