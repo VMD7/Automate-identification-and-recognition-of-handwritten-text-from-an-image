@@ -1,6 +1,6 @@
 # Automate Identification and Recognition of Handwritten Text from an Image
 
-![CRNN Model](images/crnn_model.png)
+![CRNN Model](Images/AnimationHTR.gif)
 
 This repository contains the implementation of a CRNN (Convolutional Recurrent Neural Network) model designed to detect and recognize handwritten text from images. The CRNN combines convolutional layers for feature extraction with recurrent layers for sequence modeling, making it well-suited for tasks involving sequential data like text.
 
